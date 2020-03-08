@@ -149,8 +149,10 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/V2RaySSR/Trojan/raw/master/web.zip
-    	unzip web.zip
+	#wget https://github.com/V2RaySSR/Trojan/raw/master/web.zip
+    	#unzip web.zip
+	wget https://github.com/yoursbest/Trojan/raw/master/demo.zip
+	unzip demo.zip
 	systemctl restart nginx.service
 	#申请https证书
 	mkdir /usr/src/trojan-cert
