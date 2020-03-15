@@ -283,7 +283,8 @@ EOF
 	systemctl enable trojan.service
 	green "======================================================================"
 	green "Trojan已安装完成，请使用以下链接下载trojan客户端，此客户端已配置好所有参数"
-	green "1、复制下面的链接，在浏览器打开，下载客户端"
+	# green "1、复制下面的链接，在浏览器打开，下载客户端"
+    green "复制下面的链接，在浏览器打开，下载客户端，并在完成后从服务器删除"
 	yellow "http://${your_domain}/$trojan_path/trojan-cli.zip"
 	#red "请记录下面规则网址"
 	#yellow "http://${your_domain}/trojan.txt"
