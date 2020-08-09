@@ -115,8 +115,11 @@ real_addr=`ping ${your_domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
 local_addr=`curl ipv4.icanhazip.com`
 if [ $real_addr == $local_addr ] ; then
 	green "=========================================="
-	green "       域名解析正常，开始安装trojan"
+	green "       域名解析正常，开始安装trojan          "
 	green "=========================================="
+	red "=========================================="
+	red "       不要在Ubuntu下使用sudo执行acme.sh"
+	red "=========================================="
 	sleep 1s
 cat > /etc/nginx/nginx.conf <<-EOF
 user  root;
